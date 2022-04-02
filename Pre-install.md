@@ -1,4 +1,3 @@
-# Adjusting BIOS
 # In order to get this mainboard to run macOS, we need to do the following steps.
 
 ## Adjusting the main BIOS settings
