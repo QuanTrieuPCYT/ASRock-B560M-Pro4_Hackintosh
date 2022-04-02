@@ -50,3 +50,8 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 * Pretty much anything else
 ## ❌ Not workin'
 * **You tell me**
+
+## Credits
+* [Apple](https://apple.com) for [**macOS**](https://apple.com/macos)
+* [acidanthera](https://github.com/acidanthera) for [**OpenCore**](https://github.com/acidanthera/OpenCorePkg), [**Lilu**](https://github.com/acidanthera/Lilu), [**WhateverGreen**](https://github.com/acidanthera/WhateverGreen) and [**AppleALC**](https://github.com/acidanthera/AppleALC)
+* [Dortania](https://dortania.github.io) for [**OpenCore Install Guide**](https://dortania.github.io/OpenCore-Install-Guide)
