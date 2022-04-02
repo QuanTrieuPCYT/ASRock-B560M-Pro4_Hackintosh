@@ -17,6 +17,19 @@
 * Secure Boot
 * Intel SGX
 
+## For 11th gen CPU users
+Your iGPU will not be supported in macOS due to Apple's transistion to Apple Silicon, so you can skip the iGPU configuration step. Using an F-series CPU would be beneficial here.
+
+Also, 11th Gen CPUs are required to change the CPUID by adding these entries under `Root > Kernel > Emulate` as Apple also doesn't support them out of the box:
+
+| Key | Type | Value |
+| --- | --- | --- |
+| Cpuid1Data | Data | \<EA060900000000000000000000000000\> |
+| Cpuid1Mask | Data | \<FFFFFFFF000000000000000000000000\> |
+| DummyPowerManagement | Booelan | 0 |
+| MaxKernel | String | |
+| MinKernel | String | |
+
 ## Config your iGPU
 Not required if you don't have one. [**Follow these instructions**](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties).
 
