@@ -26,7 +26,7 @@ Also, 11th Gen CPUs are required to change the CPUID by adding these entries und
 | --- | --- | --- |
 | Cpuid1Data | Data | \<EA060900000000000000000000000000\> |
 | Cpuid1Mask | Data | \<FFFFFFFF000000000000000000000000\> |
-| DummyPowerManagement | Booelan | 0 |
+| DummyPowerManagement | Boolean | 0 |
 | MaxKernel | String | |
 | MinKernel | String | |
 
