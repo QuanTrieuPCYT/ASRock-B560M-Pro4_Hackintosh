@@ -25,4 +25,4 @@ Not required if you don't have one. [**Follow these instructions**](https://dort
 Use:
 * `iMac20,1` if you have an 8-core or lower CPU with an iGPU (ie. i7-10700)
 * `iMac20,2` if you have a 10-core CPU (ie. i9-10900)
-* `iMacPro1,1` (or `MacPro7,1` with the [**RestrictEvents**](https://github.com/acidanthera/RestrictEvents)) if you don't have an iGPU (ie. AMD dGPU with a F-series CPU such as the i3-10105F like me). 
+* `iMacPro1,1` (or `MacPro7,1` with the [**RestrictEvents**](https://github.com/acidanthera/RestrictEvents) kext) if you don't have an iGPU (ie. AMD dGPU with a F-series CPU such as the i3-10105F like me). 
