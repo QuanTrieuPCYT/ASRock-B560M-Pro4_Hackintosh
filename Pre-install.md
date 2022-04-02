@@ -21,6 +21,11 @@
 ## Config your iGPU
 Not required if you don't have one. [**Follow these instructions**](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties).
 
+## Map your USB
+Using [**USBToolBox**](https://github.com/USBToolBox/tool) is recommended.
+Map your ASM107x USB controller (entries 2.0 and 3.0) as type `255` (Internal) as those two stay on all the time.
+**Note:** You must exclude your RGB controller during the mapping process, as it will cause sleep problems and the RGB LEDs will freeze until you fully halt the machine.
+
 ## Add your own `PlatformInfo` entries using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 Use:
 * `iMac20,1` if you have an 8-core or lower CPU with an iGPU (ie. i7-10700)
