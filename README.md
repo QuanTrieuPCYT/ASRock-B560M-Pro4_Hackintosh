@@ -29,8 +29,7 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 * Supports 10th Gen Intel® Core™ Processors and 11th Gen Intel® Core™ Processors
 * Ethernet: Intel® Gigabit LAN
 * Audio: Realtek ALC897 (layout-id 66)
-* Expansion Slots: 1x PCI-E (GEN 3) x16 socket and 1x M.2 socket 1, key A
-* 1x PCIe 4.0 x16, 1x PCIe 3.0 x16, 1x PCIe 3.0 x1, 1x M.2 Key-E for WiFi, 1x Hyper M.2 (PCIe Gen4 x4), 1x Ultra M.2 (PCIe Gen3 x4 & SATA3)
+* Expansion Slots: 1x PCI-E (GEN 3) x16 socket, 1x M.2 socket 1 Key-A, 1x PCIe 4.0 x16, 1x PCIe 3.0 x16, 1x PCIe 3.0 x1, 1x M.2 Key-E for WiFi, 1x Hyper M.2 (PCIe Gen4 x4), 1x Ultra M.2 (PCIe Gen3 x4 & SATA3)
 
 **For more detailed info please visit https://www.asrock.com/mb/Intel/B560M%20Pro4/**
 
