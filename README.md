@@ -2,7 +2,7 @@
 ## Please follow [this guide](/Pre-install.md) before using the bundled EFI.
 OpenCore bootloader that makes your ASRock B560M Pro4 runs macOS Big Sur and up!
 
-![a](https://user-images.githubusercontent.com/73286927/161383063-794b1bd1-b139-4ddf-8777-4c1fb988c5d7.png)
+![image](https://user-images.githubusercontent.com/73286927/173774661-0dc1f681-59d8-4d80-85e9-229b3a3b827d.png)
 
 Minecraft running smoothly on the same hack.
 
