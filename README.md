@@ -6,7 +6,7 @@ OpenCore bootloader that makes your ASRock B560M Pro4 runs macOS Big Sur and up!
 
 Minecraft running smoothly on the same hack.
 
-![Screen Shot 2022-04-02 at 19 16 41](https://user-images.githubusercontent.com/73286927/161383224-d15fe85a-50d1-4b96-bbc1-c6f7a60d6a33.png)
+![Screen Shot 2022-06-15 at 14 44 57](https://user-images.githubusercontent.com/73286927/173772670-86aea032-beab-4b7c-8ff6-9b9a7fdc3362.png)
 
 ## PC Specs:
 ```
