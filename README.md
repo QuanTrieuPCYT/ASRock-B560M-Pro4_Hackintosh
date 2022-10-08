@@ -34,9 +34,8 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 **For more detailed info please visit https://www.asrock.com/mb/Intel/B560M%20Pro4/**
 
 ## ✅ Whats workin'
-* Full GPU acceleration iGPU (dGPU + iGPU and dGPU-only configurations as well)
-* Intel Quick Sync if a dGPU is present with SMBIOS `iMac20,1`
-* DRM with AMD dGPU + iGPU (`iMac20,1`) and AMD dGPU-only (`iMacPro1,1` and `MacPro7,1`) configurations. Please follow [**this guide**](https://dortania.github.io/OpenCore-Post-Install/universal/drm.html) for more information.
+* Full graphics acceleration with supported GPUs (`iMacPro1,1` or `MacPro7,1` is recommended)
+* DRM with AMD dGPU (`iMacPro1,1` and `MacPro7,1`) configuration. Please follow [**this guide**](https://dortania.github.io/OpenCore-Post-Install/universal/drm.html) for more information.
 * USB 2.0 and 3.0 (all)
 * Ethernet
 * Audio
