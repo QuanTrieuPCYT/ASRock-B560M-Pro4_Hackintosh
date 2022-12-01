@@ -11,7 +11,7 @@ Minecraft running smoothly on the same hack.
 ## PC Specs:
 ```
 CPU: Intel® Core™ i3-10105F
-RAM: 2x 8GB Adata XPG Gammix D10
+RAM: 4x 8GB Adata XPG Gammix D10
 GPU: Sapphire AMD Radeon Pulse RX 570 4GB
 SSD: Kingspec P4-120 120GB
 HDD: WD Blue 1TB WD10EZEX + Seagate Momentus Thin 500GB
