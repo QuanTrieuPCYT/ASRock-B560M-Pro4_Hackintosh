@@ -1,6 +1,7 @@
 # ASRock B560M Pro4 Motherboard Hackintosh EFI - macOS 11+
 ## Please follow [this guide](/Pre-install.md) before using the bundled EFI.
 OpenCore bootloader that makes your ASRock B560M Pro4 runs macOS Big Sur and up!
+### Note: This motherboard won't output images reliably on Sonoma somehow - currently looking for a fix.
 
 ![image](https://user-images.githubusercontent.com/73286927/215160208-4051dcdd-5c66-408c-bc20-543cc0b578b8.png)
 
@@ -35,6 +36,7 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 
 ## ✅ Whats workin'
 * Full graphics acceleration with supported GPUs (`iMacPro1,1` or `MacPro7,1` is recommended)
+* Full proper acceleration with SideCar and Mirroring support on `iMac20,1` or `iMac20,2` SMBIOS (10th Gen GPU running in headless mode)
 * DRM with AMD dGPU (`iMacPro1,1` and `MacPro7,1`) configuration. Please follow [**this guide**](https://dortania.github.io/OpenCore-Post-Install/universal/drm.html) for more information.
 * USB 2.0 and 3.0 (all)
 * Ethernet
@@ -47,6 +49,8 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 * Continuity features (such as AirDrop, Handoff and Universal Control) **(requires a compatible Broadcom wireless card)**
 * Pretty much anything else
 ## ❌ Not workin'
+* 10th Gen iGPUs in display-driving mode. Only compute mode works on 11th Gen platform motherboards.
+* All 11th iGen GPUs.
 * **You tell me**
 
 ## Credits
