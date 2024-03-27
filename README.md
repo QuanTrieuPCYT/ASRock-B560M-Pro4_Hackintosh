@@ -14,6 +14,7 @@ Minecraft running smoothly on the same hack.
 CPU: Intel® Core™ i3-10105F
 RAM: 4x 8GB Adata XPG Gammix D10
 GPU: Biostar AMD Radeon RX 6600XT 8GB
+NVMe: Western Digital PC SN730 256GB
 SSD: Kingspec P4-120 120GB
 HDD: WD Blue 1TB WD10EZEX + Seagate Momentus Thin 500GB
 Motherboard: ASRock B560M Pro4
