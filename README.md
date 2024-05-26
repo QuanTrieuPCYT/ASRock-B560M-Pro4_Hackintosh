@@ -48,7 +48,7 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 * Wake on LAN
 * SMBUS
 * Continuity features (such as AirDrop, Handoff and Universal Control) **(requires a compatible Broadcom wireless card)**
-* `AppleVTD` with `DisableIoMapper` disabled in `config.plist`, as this motherboard's DMAR table doens't have any memory regions
+* `AppleVTD` with `DisableIoMapper` disabled in `config.plist`, as this motherboard's DMAR table doesn't have any memory regions
 * Pretty much anything else
 ## ❌ Not workin'
 * 10th Gen iGPUs in display-driving mode. Only compute mode works on 11th Gen platform motherboards.
