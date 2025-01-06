@@ -1,18 +1,17 @@
 # ASRock B560M Pro4 Motherboard Hackintosh EFI - macOS 11+
 ## Please follow [this guide](/Pre-install.md) before using the bundled EFI.
 OpenCore bootloader that makes your ASRock B560M Pro4 runs macOS Big Sur and up!
-### Note: This motherboard won't output images reliably on Sonoma somehow - currently looking for a fix.
 
-![image](https://user-images.githubusercontent.com/73286927/215160208-4051dcdd-5c66-408c-bc20-543cc0b578b8.png)
+![Screenshot_2025-01-06_at_04 07 22](https://github.com/user-attachments/assets/5ed99f05-e9d7-473d-9892-071ee87701d2)
 
 Minecraft running smoothly on the same hack.
 
-![image](https://user-images.githubusercontent.com/73286927/215159086-580b0a70-ffad-46e7-9a9f-f91189c16561.png)
+![Screenshot_2025-01-06_at_04 09 29](https://github.com/user-attachments/assets/645852c1-974a-401a-82b5-8e05b1d9882c)
 
 ## PC Specs:
 ```
-CPU: Intel® Core™ i3-10105F
-RAM: 4x 8GB Adata XPG Gammix D10
+CPU: Intel® Core™ i5-11400F
+RAM: 64GB (4x 16GB Adata XPG Gammix D10)
 GPU: Biostar AMD Radeon RX 6600XT 8GB
 NVMe: Western Digital PC SN730 256GB
 SSD: Kingspec P4-120 120GB
@@ -50,6 +49,7 @@ Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
 * Continuity features (such as AirDrop, Handoff and Universal Control) **(requires a compatible Broadcom wireless card)**
 * `AppleVTD` with `DisableIoMapper` disabled in `config.plist`, as this motherboard's DMAR table doesn't have any memory regions
 * Pretty much anything else
+* Comet Lake and Rocket Lake undervolting (with VoltageShift)
 ## ❌ Not workin'
 * 10th Gen iGPUs in display-driving mode. Only compute mode works on 11th Gen platform motherboards.
 * All 11th iGen GPUs.
