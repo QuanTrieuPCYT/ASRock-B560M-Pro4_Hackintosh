@@ -8,19 +8,22 @@ Minecraft running smoothly on the same hack.
 
 ![Screenshot_2025-01-06_at_04 09 29](https://github.com/user-attachments/assets/645852c1-974a-401a-82b5-8e05b1d9882c)
 
-## PC Specs:
+## Current PC Specs:
 ```
 CPU: Intel® Core™ i5-11400F
-RAM: 64GB (4x 16GB Adata XPG Gammix D10)
+RAM: 64GB (4x 16GB Adata XPG Gammix D10) @ 3200 MT/s
 GPU: Biostar AMD Radeon RX 6600XT 8GB
 NVMe: Western Digital PC SN730 256GB
-SSD: Kingspec P4-120 120GB
+SSD: Kingspec P4-120 120GB + OEM 120GB
 HDD: WD Blue 1TB WD10EZEX + Seagate Momentus Thin 500GB
 Motherboard: ASRock B560M Pro4
 PSU: Coolermaster Elite V3 PC600 600W
-Cooler: Jonsbo CR-1400
+Cooler: Thermalright Phantom Spirit 120 SE
 Case: Xigmatek Aero 2F
-Wireless Card: Broadcom BCM94360CS2 (taken from a real Mac)
+Ethernet NIC 1: Realtek RTL8125BG 2.5GbE Gaming Ethernet Controller
+Ethernet NIC 2: Integrated Intel Gigabit Ethernet Controller I219-V
+Ethernet NIC 3: Intel 10GbE Ethernet Controller X540-AT2
+Wireless NIC: Broadcom BCM94360CS2 (taken from a real Mac)
 ```
 
 ## Motherboard Specs:
