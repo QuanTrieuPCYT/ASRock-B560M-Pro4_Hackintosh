@@ -1,51 +1,53 @@
 /*
- * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20200925 (64-bit version)
- * Copyright (c) 2000 - 2020 Intel Corporation
- * 
- * Disassembling to symbolic ASL+ operators
- *
- * Disassembly of iASLVa9sx1.aml, Sat Apr  2 21:19:42 2022
- *
- * Original Table Header:
- *     Signature        "SSDT"
- *     Length           0x000000FC (252)
- *     Revision         0x02
- *     Checksum         0xC4
- *     OEM ID           "ACDT"
- *     OEM Table ID     "MCHCSBUS"
- *     OEM Revision     0x00000000 (0)
- *     Compiler ID      "INTL"
- *     Compiler Version 0x20200925 (538970405)
+ * SMBus compatibility table.
+ * Original from: https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/AcpiSamples/Source/SSDT-SBUS-MCHC.dsl
  */
-DefinitionBlock ("", "SSDT", 2, "ACDT", "MCHCSBUS", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "CORP", "SBUSMCHC", 0x00000000)
 {
-    External (_SB_.PC00, DeviceObj)
-    External (_SB_.PC00.SBUS, DeviceObj)
+    External (\_SB.PC00, DeviceObj)
+    External (\_SB.PC00.MCHC, DeviceObj)
+    External (\_SB.PC00.SBUS, DeviceObj)
 
-    Scope (_SB.PC00)
+    // Only create MCHC if it doesn't already exist
+    If (LNot (CondRefOf (\_SB.PC00.MCHC)))
     {
-        Device (MCHC)
+        Scope (\_SB.PC00)
         {
-            Name (_ADR, Zero)  // _ADR: Address
-            Method (_STA, 0, NotSerialized)  // _STA: Status
+            Device (MCHC)
             {
-                If (_OSI ("Darwin"))
+                Name (_ADR, Zero)  // _ADR: Address
+                Method (_STA, 0, NotSerialized)  // _STA: Status
                 {
-                    Return (0x0F)
-                }
-                Else
-                {
-                    Return (Zero)
+                    If (_OSI ("Darwin"))
+                    {
+                        Return (0x0F)
+                    }
+                    Else
+                    {
+                        Return (Zero)
+                    }
                 }
             }
         }
     }
 
-    Device (_SB.PC00.SBUS.BUS0)
+    Device (\_SB.PC00.SBUS.BUS0)
     {
         Name (_CID, "smbus")  // _CID: Compatible ID
         Name (_ADR, Zero)  // _ADR: Address
+
+        /*
+        * Uncomment replacing 0x57 with your own value which might be found
+        * in SMBus section of Intel datasheet for your motherboard.
+        *
+        * The "diagsvault" is the diagnostic vault where messages are stored.
+        * It's located at address 87 (0x57) on the SMBus controller.
+        * While "diagsvault" may refer to diags, a hardware diagnosis program via EFI for Macs
+        * that communicates with the SMBus controller, the effect is really unknown for hacks.
+        * Uncomment this with caution.
+        */
+
+        /**
         Device (DVL0)
         {
             Name (_ADR, 0x57)  // _ADR: Address
@@ -56,7 +58,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "MCHCSBUS", 0x00000000)
                 {
                     Return (Buffer (One)
                     {
-                         0x57                                             // W
+                        0x57                                             // W
                     })
                 }
 
@@ -67,6 +69,7 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "MCHCSBUS", 0x00000000)
                 })
             }
         }
+        **/
 
         Method (_STA, 0, NotSerialized)  // _STA: Status
         {
@@ -81,4 +84,3 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "MCHCSBUS", 0x00000000)
         }
     }
 }
-
